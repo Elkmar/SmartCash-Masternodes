@@ -1,3 +1,10 @@
+adduser smartcash
+
+adduser smartcash sudo
+
+su smartcash
+
+cd
 
 sudo add-apt-repository ppa:smartcash/ppa
 
