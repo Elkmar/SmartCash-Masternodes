@@ -1,1 +1,1 @@
-wget -N https://raw.githubusercontent.com/Elkmar/SmartCash-Masternodes/master/install.sh && chmod -f 777 install.sh && ./install.sh
+wget -N https://raw.githubusercontent.com/Elkmar/SmartCash-Masternodes/master/smartnode_install.sh && chmod -f 777 smartnode_install.sh && ./smartnode_install.sh
