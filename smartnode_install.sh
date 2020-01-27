@@ -2,6 +2,8 @@
 # install.sh
 # Installs SmartNodes on Ubuntu 16.04 LTS x64 and Ubuntu 18.04 LTS x64
 # ATTENTION: The anti-ddos part will disable http, https and dns ports.
+#wget -N https://raw.githubusercontent.com/Elkmar/SmartCash-Masternodes/master/smartnode_install.sh && chmod -f 777 smartnode_install.sh && ./smartnode_install.sh
+
 
 if [ "$(whoami)" != "root" ]; then
   echo "Script must be run as user: root"
@@ -171,11 +173,3 @@ alias restartnode='smartcash-cli stop && sleep 5 && smartcashd'
     echo "     restartnode for 'smartcash-cli stop && sleep 5 && smartcashd'"
     echo "     Please log out/in for these changes to take effect"
 fi
-
-
-# Reboot the server
-# reboot
-
-# Since we not longer reboot here, reload the SSH config to active the
-# custom port if selected
-systemctl reload sshd
